@@ -5,8 +5,8 @@
   <div class='dashboard'>
     <div class="dashboard-nav">
         <header><a href="#!" class="menu-toggle fa-solid fa-bars"><i class="fas fa-bars"></i></a><a href="#"
-                                                                                   class="brand-logo"><i
-                class="fas fa-anchor"></i> <span>BRAND</span></a></header>
+                                                                                   class="brand-logo">
+                                                                                <img src="../assets/img/logo.png" alt=""></a></header>
         <nav class="dashboard-nav-list"><a href="#" class="dashboard-nav-item">
             Home </a><a
                 href="#" class="dashboard-nav-item active"> dashboard
