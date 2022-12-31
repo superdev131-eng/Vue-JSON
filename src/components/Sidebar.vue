@@ -11,15 +11,15 @@
             Home </a><a
                 href="#" class="dashboard-nav-item active"> dashboard
         </a><a
-                href="#" class="dashboard-nav-item"> Upload </a>
-            <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"> Media </a>
+                href="#" class="dashboard-nav-item"> Company </a>
+            <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"> Vessel </a>
                 <div class='dashboard-nav-dropdown-menu'><a href="#"
                                                             class="dashboard-nav-dropdown-item">All</a><a
                         href="#" class="dashboard-nav-dropdown-item">Recent</a><a
                         href="#" class="dashboard-nav-dropdown-item">Images</a><a
                         href="#" class="dashboard-nav-dropdown-item">Video</a></div>
             </div>
-            <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"> Users </a>
+            <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"> Form Menu </a>
                 <div class='dashboard-nav-dropdown-menu'><a href="#"
                                                             class="dashboard-nav-dropdown-item">All</a><a
                         href="#" class="dashboard-nav-dropdown-item">Subscribed</a><a
@@ -28,25 +28,20 @@
                         href="#" class="dashboard-nav-dropdown-item">Banned</a><a
                         href="#" class="dashboard-nav-dropdown-item">New</a></div>
             </div>
-            <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"> Payments </a>
+            <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"> BD </a>
                 <div class='dashboard-nav-dropdown-menu'><a href="#"
                                                             class="dashboard-nav-dropdown-item">All</a><a
                         href="#" class="dashboard-nav-dropdown-item">Recent</a><a
                         href="#" class="dashboard-nav-dropdown-item"> Projections</a>
                 </div>
             </div>
-            <a href="#" class="dashboard-nav-item"> Settings </a><a
-                    href="#" class="dashboard-nav-item"><i class="fas fa-user"></i> Profile </a>
-          <div class="nav-item-divider"></div>
+            <a
+                    href="#" class="dashboard-nav-item"> ISM </a>
           <a
-                    href="#" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Logout </a>
+                    href="#" class="dashboard-nav-item"> PD </a>
+                    <a
+                    href="#" class="dashboard-nav-item"> ESD </a>
         </nav>
-    </div>
-    <div class='dashboard-app'>
-        <header class='dashboard-toolbar'><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a></header>
-        <div class='dashboard-content'>
-            
-        </div>
     </div>
 </div>
 </template>
