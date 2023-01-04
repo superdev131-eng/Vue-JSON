@@ -31,7 +31,7 @@
   <div class="dropdown" id="dropdown">
     <div class="sub-dropdown-nav-item">
   <button class="sub-btn sub-dropdown-btn" id="sub-btn1">
-    CPD
+    <span><img src="../assets/img/CPD.png" alt=""> CPD</span>
     <i class="fa-solid fa-chevron-down drop-icon" id="sub-arrow1"></i>
   </button>
 
@@ -86,7 +86,7 @@
 </div>
 <div class="sub-dropdown-nav-item">
     <button class="sub-btn sub-dropdown-btn" id="sub-btn2">
-      BD
+      <span><img src="../assets/img/BD.png" alt=""> BD</span> 
       <i class="fa-solid fa-chevron-down drop-icon" id="sub-arrow2"></i>
     </button>
   
@@ -97,7 +97,7 @@
   
   <div class="sub-dropdown-nav-item">
     <button class="sub-btn sub-dropdown-btn" id="sub-btn3">
-      ISM
+      <span><img src="../assets/img/ISM.png" alt=""> ISM</span>
       <i class="fa-solid fa-chevron-down drop-icon" id="sub-arrow3"></i>
     </button>
   
@@ -107,7 +107,7 @@
   </div>
   <div class="sub-dropdown-nav-item">
     <button class="sub-btn sub-dropdown-btn" id="sub-btn4">
-      PD
+      <span><img src="../assets/img/PD.png" alt=""> PD</span>
       <i class="fa-solid fa-chevron-down drop-icon" id="sub-arrow4"></i>
     </button>
   
@@ -117,7 +117,7 @@
   </div>
   <div class="sub-dropdown-nav-item">
     <button class="sub-btn sub-dropdown-btn" id="sub-btn5">
-      ESD
+      <span><img src="../assets/img/ESD.png" alt=""> ESD</span>
       <i class="fa-solid fa-chevron-down drop-icon" id="sub-arrow5"></i>
     </button>
   
