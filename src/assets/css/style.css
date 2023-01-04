@@ -5,8 +5,8 @@ body{
 .sidebar{
     width: 266px;
     min-height: 100vh;
-    max-height: 1024px;
     background: #FFFFFF;
+    padding-bottom: 30px;
 }
 
 .sidebar-brand{
@@ -30,7 +30,7 @@ body{
     color: #fff;
 }
 
-.nav-link,.dropdown-nav-item{
+.nav-link{
     padding: 12px 24px;
     font-family: 'Roboto';
     font-style: normal;
@@ -41,9 +41,23 @@ body{
 }
 
 .dropdown-nav-item{
-    padding-bottom: 0;
-    margin-left: 12px;
     margin-bottom: 10px;
+    padding: 0 0 0 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #303133;
+}
+
+.dropdown-nav-link{
+    padding: 12px;
+}
+
+.drop-icon{
+    color: #303133;
+    font-size: 12px;
 }
 
 .btn {
@@ -57,14 +71,32 @@ body{
     font-size: 16px;
     line-height: 24px;
     color: #303133;
-    padding: 0;
+    padding: 12px 12px 12px 0;
     cursor: pointer;
     border: none;
     position: relative;
   }
+  .sub-btn{
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #303133;
+    background-color: #fff;
+    padding: 12px 12px 12px 6px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+  }
 
   .drop-icon{
-    padding-top: 4px;
+    padding-top: 7px;
   }
   
   .dropdown {
@@ -73,27 +105,62 @@ body{
     transform: translateY(0.5rem);
     transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
   }
+
   
   .dropdown a {
     display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
     align-items: center;
     text-decoration: none;
     color: black;
   }
-  
+  .sub-dropdown-nav-item{
+    border-radius: 10px;
+  }
+
+  .sub-dropdown{
+    margin-left: 12px;
+  }
+
+  .sub-drop-nav-link {
+    width: inherit;
+    margin-left: -10px;
+    padding: 13px 31px;
+    text-align: center;
+  }
+
+  .sub-drop-nav-link:hover{
+    background: #1C3879;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #fff;
+  }
+
   .show {
     display: block;
     opacity: 1;
     transform: translateY(0rem);
   }
+  .font-700{
+    font-weight: 700;
+    background: #F4F5F8;
+    border-radius: 10px;
+  }
+  .sub-dropdown-nav-item {
+    background: #F4F5F8;
+    border-radius: 10px;
+  }
+
+  .sub-dropdown-nav-item .show .sub-btn{
+    background: #F4F5F8;
+    border-radius: 10px;
+  }
   
   .arrow {
-    margin-top: 5px;
+    margin-top: 7px;
     transform: rotate(180deg);
     transition: 0.2s ease;
   }
   
-  .dropdown-nav-item{
-    /* sdfs */
-    padding: 12px;
-  }
