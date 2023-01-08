@@ -250,7 +250,7 @@
 }
 
 .pagination-wrapper {
-  margin-top: 33px;
+  padding: 33px 0;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -280,5 +280,12 @@
   display: inline-block;
   text-decoration: none;
   padding: 5px 10px;
-  color: #000;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.01px;
+  color: #828282;
 }
