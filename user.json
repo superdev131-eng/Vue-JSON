@@ -1,0 +1,464 @@
+{
+  "sidebar": [
+    { "id": 1, "name": "Home", "hasSubMenu": false },
+    { "id": 2, "name": "Dashboard", "hasSubMenu": false },
+    { "id": 3, "name": "Company", "hasSubMenu": false },
+    { "id": 3, "name": "Vessel", "hasSubMenu": false },
+    {
+      "id": 5,
+      "name": "Form Menu",
+      "hasSubMenu": true,
+      "subMenu": [
+        {
+          "id": "sub-btn1",
+          "arrowid": "sub-arrow1",
+          "dropid": "sub-dropdown1",
+          "name": "CPD",
+          "hasIcon": true,
+          "iconPath": "src/assets/img/CPD.png",
+          "hasSubMenu": true,
+          "subMenu": [
+            {
+              "id": "sub-sub-btn1",
+              "arrowid": "sub-sub-arrow1",
+              "dropid": "sub-sub-dropdown1",
+              "name": "Basics",
+              "hasSubMenu": true,
+              "subMenu": [{ "id": 1, "name": "sample" }]
+            },
+            {
+              "id": "sub-sub-btn2",
+              "arrowid": "sub-sub-arrow2",
+              "dropid": "sub-sub-dropdown2",
+              "name": "Crew Data",
+              "hasSubMenu": true,
+              "subMenu": [
+                { "id": 1, "name": "CV ( STCW Certificate )" },
+                { "id": 2, "name": "Crew List" },
+                { "id": 3, "name": "Keyman Hiring" },
+                { "id": 4, "name": "Crew Bonus" },
+                { "id": 5, "name": "Expense" },
+                { "id": 6, "name": "Operation Cost Budget / Review" },
+                { "id": 7, "name": "Evaluation Report" },
+                { "id": 8, "name": "Deduction Notice" },
+                { "id": 9, "name": "Bank Accounts" }
+              ]
+            },
+            {
+              "id": "sub-sub-btn3",
+              "arrowid": "sub-sub-arrow3",
+              "dropid": "sub-sub-dropdown3",
+              "name": "Form for Crew",
+              "hasSubMenu": true,
+              "subMenu": [
+                {
+                  "id": 1,
+                  "name": "Voyage Bonus"
+                },
+                { "id": 2, "name": "Cash To Master" },
+                { "id": 3, "name": "Hand Over Report" },
+                { "id": 4, "name": "Familiar List" },
+                { "id": 5, "name": "G-15 Sickness Injury Report" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sub-btn2",
+          "arrowid": "sub-arrow2",
+          "dropid": "sub-dropdown2",
+          "name": "BD",
+          "hasIcon": true,
+          "iconPath": "src/assets/img/BD.png",
+          "hasSubMenu": true,
+          "subMenu": []
+        },
+        {
+          "id": "sub-btn3",
+          "arrowid": "sub-arrow3",
+          "dropid": "sub-dropdown3",
+          "name": "ISM",
+          "hasIcon": true,
+          "iconPath": "src/assets/img/ISM.png",
+          "hasSubMenu": true,
+          "subMenu": []
+        },
+        {
+          "id": "sub-btn4",
+          "arrowid": "sub-arrow4",
+          "dropid": "sub-dropdown4",
+          "name": "PD",
+          "hasIcon": true,
+          "iconPath": "src/assets/img/PD.png",
+          "hasSubMenu": true,
+          "subMenu": []
+        },
+        {
+          "id": "sub-btn5",
+          "arrowid": "sub-arrow5",
+          "dropid": "sub-dropdown5",
+          "name": "ESD",
+          "hasIcon": true,
+          "iconPath": "src/assets/img/ESD.png",
+          "hasSubMenu": true,
+          "subMenu": []
+        }
+      ]
+    }
+  ],
+  "basics": [],
+  "crewData": [
+    {
+      "subMenu": [
+        {
+          "id": 1,
+          "name": "Crew Data (STCW Certificate)",
+          "breadcrumb": [
+            { "name": "Form Menu" },
+            { "name": "CPD" },
+            { "name": "CREW" }
+          ],
+          "hasSetting": false
+        }
+      ]
+    }
+  ],
+  "formForCrew": [
+    {
+      "subMenu": [
+        {
+          "id": 1,
+          "name": "Voyage Bonus",
+          "breadcrumb": [{ "name": "Form Menu" }, { "name": "CPD" }],
+          "label": "Report by Voyage",
+          "hasSetting": true,
+          "list": [
+            {
+              "list_header": [
+                { "id": 1, "name": "Date Created", "has_sorting": true },
+                { "id": 2, "name": "Status", "has_sorting": true },
+                { "id": 3, "name": "Vessel", "has_sorting": true },
+                { "id": 4, "name": "Filled By", "has_sorting": false },
+                { "id": 5, "name": "Approval Step", "has_sorting": false },
+                { "id": 6, "name": "Operations", "has_sorting": false }
+              ]
+            },
+            {
+              "list_data": [
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "active", "name": "Edit" },
+                        { "tab": "active", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "inactive", "name": "Edit" },
+                        { "tab": "inactive", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "inactive", "name": "Edit" },
+                        { "tab": "inactive", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "inactive", "name": "Edit" },
+                        { "tab": "inactive", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "inactive", "name": "Edit" },
+                        { "tab": "inactive", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "inactive", "name": "Edit" },
+                        { "tab": "inactive", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "inactive", "name": "Edit" },
+                        { "tab": "inactive", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "inactive", "name": "Edit" },
+                        { "tab": "inactive", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "inactive", "name": "Edit" },
+                        { "tab": "inactive", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "inactive", "name": "Edit" },
+                        { "tab": "inactive", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "inactive", "name": "Edit" },
+                        { "tab": "inactive", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "data": [
+                    { "type": "text", "text": "12/Oct/2022" },
+                    { "type": "label", "text": "Completed" },
+                    { "type": "text", "text": "Ever Alliance" },
+                    { "type": "filter", "text": "Niall Cooper" },
+                    { "type": "text", "text": "Step 1: Shore Approval" },
+                    {
+                      "type": "actions",
+                      "actions": [
+                        { "name": "View" },
+                        { "tab": "inactive", "name": "Edit" },
+                        { "tab": "inactive", "name": "Delete" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crewDataForm": [
+    {
+      "sectionHeader": "Profile",
+      "fields": [
+        {
+          "label": "Vessel",
+          "type": "Select",
+          "options": ["one", "two", "three"]
+        },
+        {
+          "label": "Embarkation Place",
+          "type": "input"
+        },
+        {
+          "label": "Vessel",
+          "type": "Select",
+          "options": ["one", "two", "three"]
+        },
+        {
+          "label": "Embarkation Place",
+          "type": "input"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "Crew Certificate",
+      "fields": [
+        {
+          "label": "Passport",
+          "type": "input"
+        },
+        {
+          "label": "Exp. Date",
+          "type": "date"
+        },
+        {
+          "label": "Seaman Book",
+          "type": "input"
+        },
+        {
+          "label": "Exp. Date",
+          "type": "date"
+        },
+        {
+          "label": "Certificate Required of Flag State",
+          "type": "input"
+        },
+        {
+          "label": "Exp. Date",
+          "type": "date"
+        },
+        {
+          "label": "GMDSS",
+          "type": "input"
+        },
+        {
+          "label": "Exp. Date",
+          "type": "date"
+        },
+        {
+          "label": "SSO/DSD",
+          "type": "input"
+        },
+        {
+          "label": "Exp. Date",
+          "type": "date"
+        },
+        {
+          "label": "Certificate of crew's Nation",
+          "type": "input"
+        },
+        {
+          "label": "Exp. Date",
+          "type": "date"
+        },
+        {
+          "label": "Flag Medical Cert Exp.Date",
+          "type": "date"
+        },
+        {
+          "label": "Yellow Fever Cert Exp.Date",
+          "type": "date"
+        },
+        {
+          "label": "Flag Medical Cert Exp.Date",
+          "type": "date"
+        },
+        {
+          "label": "Nation Medical Exp.Date",
+          "type": "date"
+        },
+        {
+          "label": "ECDIS Completed Time",
+          "type": "date"
+        }
+      ]
+    },
+    {
+      "sectionHeader": "Uploads",
+      "fields": {
+        "label": "Attachment",
+        "type": "file"
+      }
+    }
+  ]
+}
