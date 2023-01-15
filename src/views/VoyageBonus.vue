@@ -88,15 +88,19 @@ export default {
         <div class="date-container">
           <label class="mr-21" for="">Date</label>
           <input
-            type="date"
+            type="text"
             class="date-picker"
-            placeholder="Select a start date"
+            placeholder="&#128197 Select a start date"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
           />
           <span class="ph-12"> - </span>
           <input
-            type="date"
+            type="text"
             class="date-picker"
-            placeholder="Select an end date"
+            placeholder="&#128197 Select an end date"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
           />
         </div>
         <div class="name-container">
@@ -123,6 +127,35 @@ export default {
       </div>
       <div id="table-scroll" class="table-scroll">
         <table id="main-table" class="main-table">
+          <thead>
+            <tr>
+              <td><input type="checkbox" name="" id="" /></td>
+              <td v-for="listheader in list[0].list_header">
+                {{ listheader.name }}
+                <svg
+                  v-if="listheader.has_sorting"
+                  width="14"
+                  height="15"
+                  viewBox="0 0 14 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.5 8.375H11.375L7.4375 12.75L3.5 8.375Z"
+                    fill="#333333"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.4375 2.25L11.375 6.625H3.5L7.4375 2.25Z"
+                    fill="#333333"
+                  />
+                </svg>
+              </td>
+            </tr>
+          </thead>
           <tbody>
             <tr v-for="listItem in list[1].list_data">
               <td><input type="checkbox" name="" id="" /></td>
@@ -164,35 +197,6 @@ export default {
               </td>
             </tr>
           </tbody>
-          <tfoot>
-            <tr>
-              <td><input type="checkbox" name="" id="" /></td>
-              <td v-for="listheader in list[0].list_header">
-                {{ listheader.name }}
-                <svg
-                  v-if="listheader.has_sorting"
-                  width="14"
-                  height="15"
-                  viewBox="0 0 14 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.5 8.375H11.375L7.4375 12.75L3.5 8.375Z"
-                    fill="#333333"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M7.4375 2.25L11.375 6.625H3.5L7.4375 2.25Z"
-                    fill="#333333"
-                  />
-                </svg>
-              </td>
-            </tr>
-          </tfoot>
         </table>
       </div>
       <div class="pagination-wrapper">

@@ -136,14 +136,24 @@
 }
 
 .date-picker {
+  width: 163px;
   background: #ffffff;
   padding: 5.5px 12px;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
 }
+.date-picker::placeholder,
+.filter-input::placeholder {
+  font-size: 14px;
+}
+
+select {
+  color: #6c757d;
+}
 
 .filter-input {
   background: #ffffff;
+  font-size: 14px;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   padding: 5.5px 12px;
@@ -206,9 +216,9 @@
   line-height: 17px;
   color: #333333;
 }
-.table-scroll tfoot,
-.table-scroll tfoot th,
-.table-scroll tfoot td {
+.table-scroll thead,
+.table-scroll thead th,
+.table-scroll thead td {
   background: #e8ebf2;
   font-family: "Inter";
   font-style: normal;

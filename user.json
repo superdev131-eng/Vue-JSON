@@ -15,7 +15,7 @@
           "dropid": "sub-dropdown1",
           "name": "CPD",
           "hasIcon": true,
-          "iconPath": "src/assets/img/CPD.png",
+          "iconPath": "src/assets/img/CPD.svg",
           "hasSubMenu": true,
           "subMenu": [
             {
@@ -69,7 +69,7 @@
           "dropid": "sub-dropdown2",
           "name": "BD",
           "hasIcon": true,
-          "iconPath": "src/assets/img/BD.png",
+          "iconPath": "src/assets/img/BD.svg",
           "hasSubMenu": true,
           "subMenu": []
         },
@@ -79,7 +79,7 @@
           "dropid": "sub-dropdown3",
           "name": "ISM",
           "hasIcon": true,
-          "iconPath": "src/assets/img/ISM.png",
+          "iconPath": "src/assets/img/ISM.svg",
           "hasSubMenu": true,
           "subMenu": []
         },
@@ -89,7 +89,7 @@
           "dropid": "sub-dropdown4",
           "name": "PD",
           "hasIcon": true,
-          "iconPath": "src/assets/img/PD.png",
+          "iconPath": "src/assets/img/PD.svg",
           "hasSubMenu": true,
           "subMenu": []
         },
@@ -99,7 +99,7 @@
           "dropid": "sub-dropdown5",
           "name": "ESD",
           "hasIcon": true,
-          "iconPath": "src/assets/img/ESD.png",
+          "iconPath": "src/assets/img/ESD.svg",
           "hasSubMenu": true,
           "subMenu": []
         }

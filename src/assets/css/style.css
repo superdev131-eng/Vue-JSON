@@ -138,7 +138,7 @@ body {
 
 .sub-drop-nav-link:hover {
   background: #1c3879;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 10px;
   color: #ffffff;
 }
@@ -153,6 +153,10 @@ body {
   background: #f4f5f8;
   border-radius: 10px;
 }
+.sub-btn-icon {
+  width: 20px;
+}
+
 .sub-dropdown-nav-item {
   background: #f4f5f8;
   border-radius: 10px;
