@@ -15,11 +15,11 @@ export default {
     <div class="main-header">
       <div class="topbar">
         <div class="User-acc float-right">
-          <img class="mr-7" src="../assets/img/search.png" alt="" />
-          <img class="mr-7" src="../assets/img/setting.png" alt="" />
-          <img src="../assets/img/avatar.png" alt="" />
+          <img class="mr-7" src="img/search.png" alt="" />
+          <img class="mr-7" src="img/setting.png" alt="" />
+          <img src="assets/img/avatar.png" alt="" />
           <span class="h5">User</span>
-          <img src="../assets/img/down-arrow.png" alt="" />
+          <img src="assets/img/down-arrow.png" alt="" />
         </div>
         <div class="title-container">
           <h4 class="breadcramp">

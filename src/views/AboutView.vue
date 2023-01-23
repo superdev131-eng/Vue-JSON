@@ -2,7 +2,6 @@
 import JsonData from "../../user.json";
 export default {
   data() {
-
     return {
       data: JsonData,
       crewDataCV: JsonData.crewData[0].subMenu[0],
@@ -17,11 +16,11 @@ export default {
     <div class="crew-tab">Form Setting</div>
     <div class="Crew-data-header">
       <div class="User-acc float-right mr-30">
-        <img class="mr-7" src="../assets/img/search.png" alt="" />
-        <img class="mr-7" src="../assets/img/setting.png" alt="" />
-        <img src="../assets/img/avatar.png" alt="" />
+        <img class="mr-7" src="img/search.png" alt="" />
+        <img class="mr-7" src="img/setting.png" alt="" />
+        <img src="img/avatar.png" alt="" />
         <span class="h5">User</span>
-        <img src="../assets/img/down-arrow.png" alt="" />
+        <img src="img/down-arrow.png" alt="" />
       </div>
       <div class="breadcrump-acc">
         <div class="crew-breadcrump">

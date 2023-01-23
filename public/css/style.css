@@ -31,9 +31,6 @@ body {
   border-radius: 10px;
   color: #fff;
 }
-#one1 {
-  display: none;
-}
 
 .nav-link {
   border-radius: 10px;
@@ -121,9 +118,6 @@ body {
   text-decoration: none;
   color: black;
 }
-.sub-dropdown-nav-item {
-  border-radius: 10px;
-}
 
 .sub-dropdown {
   margin-left: 12px;
@@ -171,4 +165,34 @@ body {
   margin-top: 7px;
   transform: rotate(180deg);
   transition: 0.2s ease;
+}
+
+.dropdownHeader {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 12px 12px 12px 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #303133;
+}
+.dropdownList {
+  list-style-type: none;
+}
+
+.hoverefect:hover {
+  font-weight: 700;
+  background: #1c3879;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.activeDropdown {
+  font-weight: 700;
+  background: red;
 }

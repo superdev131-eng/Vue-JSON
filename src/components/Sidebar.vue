@@ -1,8 +1,10 @@
 <script>
 import JsonData from "../../user.json";
+var status = false;
 export default {
   data() {
     return {
+      Dropdown: status,
       data: JsonData,
     };
   },
@@ -12,68 +14,57 @@ export default {
 <template>
   <div class="sidebar">
     <div class="sidebar-brand">
-      <img src="../assets/img/logo.png" class="siebar-title" alt="logo" />
+      <img src="img/logo.png" class="siebar-title" alt="logo" />
     </div>
     <nav class="sidebar-nav">
       <div class="nav-item" v-for="item in data.sidebar" :key="item.id">
         <div v-if="item.hasSubMenu">
-          <div class="dropdown-nav-item">
-            <button class="btn dropdown-btn" id="btn">
-              {{ item.name }}
-              <i class="fa-solid fa-chevron-down drop-icon" id="arrow"></i>
-            </button>
-
-            <div class="dropdown" id="dropdown">
-              <div
-                class="sub-dropdown-nav-item"
-                v-for="subitem in item.subMenu"
-                :key="subitem.id"
-              >
-                <button class="sub-btn sub-dropdown-btn" :id="subitem.id">
-                  <span
-                    ><img class="sub-btn-icon" :src="subitem.iconPath" alt="" />
-                    {{ subitem.name }}</span
+          <div class="customDropdown">
+            <div @click="Dropdown = !Dropdown" class="dropdownHeader">
+              <span>Form Menu</span>
+              <i v-if="Dropdown" class="fa-solid fa-chevron-up drop-icon"> </i>
+              <i v-else class="fa-solid fa-chevron-down drop-icon"> </i>
+            </div>
+            <div v-if="Dropdown" class="dropdownItems">
+              <ul class="dropdownList">
+                <li v-for="item in data.sidebar[4].subMenu">
+                  <button
+                    @click="item.id = !item.id"
+                    class="sub-btn sub-dropdown-btn"
                   >
-                  <i
-                    class="fa-solid fa-chevron-down drop-icon"
-                    :id="subitem.arrowid"
-                  ></i>
-                </button>
-
-                <div class="dropdown sub-dropdown" :id="subitem.dropid">
-                  <div
-                    class="dropdown-nav"
-                    v-for="subsubitem in subitem.subMenu"
-                    :key="subsubitem.id"
-                  >
-                    <div class="sub-dropdown-nav-item">
+                    <span
+                      ><img :src="item.iconPath" alt="" /> {{ item.name }}</span
+                    >
+                    <i v-if="item.id" class="fa-solid fa-chevron-up drop-icon">
+                    </i>
+                    <i v-else class="fa-solid fa-chevron-down drop-icon"> </i>
+                  </button>
+                  <div v-if="item.id" class="dropdownItems">
+                    <div v-for="subitem in item.subMenu">
                       <button
-                        class="sub-btn sub-dropdown-btn"
-                        :id="subsubitem.id"
+                        @click="subitem.id = !subitem.id"
+                        class="sub-btn"
                       >
-                        {{ subsubitem.name }}
+                        <span> {{ subitem.name }}</span>
                         <i
-                          class="fa-solid fa-chevron-down drop-icon"
-                          :id="subsubitem.arrowid"
-                        ></i>
+                          v-if="subitem.id"
+                          class="fa-solid fa-chevron-up drop-icon"
+                        >
+                        </i>
+                        <i v-else class="fa-solid fa-chevron-down drop-icon">
+                        </i>
                       </button>
-
-                      <div class="dropdown" :id="subsubitem.dropid">
-                        <div>
-                          <a
-                            href="#"
-                            class="sub-drop-nav-link"
-                            style="text-align: left"
-                            v-for="finallink in subsubitem.subMenu"
-                            :key="finallink.id"
-                            >{{ finallink.name }}</a
-                          >
+                      <div v-if="subitem.id">
+                        <div v-for="subsubitem in subitem.subMenu">
+                          <button class="sub-btn hoverefect">
+                            <span> {{ subsubitem.name }}</span>
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

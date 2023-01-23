@@ -10,26 +10,20 @@
       "hasSubMenu": true,
       "subMenu": [
         {
-          "id": "sub-btn1",
-          "arrowid": "sub-arrow1",
-          "dropid": "sub-dropdown1",
+          "id": false,
           "name": "CPD",
           "hasIcon": true,
-          "iconPath": "src/assets/img/CPD.svg",
+          "iconPath": "img/CPD.svg",
           "hasSubMenu": true,
           "subMenu": [
             {
-              "id": "sub-sub-btn1",
-              "arrowid": "sub-sub-arrow1",
-              "dropid": "sub-sub-dropdown1",
+              "id": false,
               "name": "Basics",
               "hasSubMenu": true,
               "subMenu": [{ "id": 1, "name": "sample" }]
             },
             {
-              "id": "sub-sub-btn2",
-              "arrowid": "sub-sub-arrow2",
-              "dropid": "sub-sub-dropdown2",
+              "id": false,
               "name": "Crew Data",
               "hasSubMenu": true,
               "subMenu": [
@@ -45,9 +39,7 @@
               ]
             },
             {
-              "id": "sub-sub-btn3",
-              "arrowid": "sub-sub-arrow3",
-              "dropid": "sub-sub-dropdown3",
+              "id": false,
               "name": "Form for Crew",
               "hasSubMenu": true,
               "subMenu": [
@@ -64,42 +56,34 @@
           ]
         },
         {
-          "id": "sub-btn2",
-          "arrowid": "sub-arrow2",
-          "dropid": "sub-dropdown2",
+          "id": false,
           "name": "BD",
           "hasIcon": true,
-          "iconPath": "src/assets/img/BD.svg",
+          "iconPath": "img/BD.svg",
           "hasSubMenu": true,
           "subMenu": []
         },
         {
-          "id": "sub-btn3",
-          "arrowid": "sub-arrow3",
-          "dropid": "sub-dropdown3",
+          "id": false,
           "name": "ISM",
           "hasIcon": true,
-          "iconPath": "src/assets/img/ISM.svg",
+          "iconPath": "img/ISM.svg",
           "hasSubMenu": true,
           "subMenu": []
         },
         {
-          "id": "sub-btn4",
-          "arrowid": "sub-arrow4",
-          "dropid": "sub-dropdown4",
+          "id": false,
           "name": "PD",
           "hasIcon": true,
-          "iconPath": "src/assets/img/PD.svg",
+          "iconPath": "img/PD.svg",
           "hasSubMenu": true,
           "subMenu": []
         },
         {
-          "id": "sub-btn5",
-          "arrowid": "sub-arrow5",
-          "dropid": "sub-dropdown5",
+          "id": false,
           "name": "ESD",
           "hasIcon": true,
-          "iconPath": "src/assets/img/ESD.svg",
+          "iconPath": "img/ESD.svg",
           "hasSubMenu": true,
           "subMenu": []
         }
